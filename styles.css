@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'Wake Snake';
+    src: url('Wake Snake Free Trial.otf') format('otf'),
+         
+}
+
 body {
     font-family: Tahoma, serif;
     margin: 20px;
@@ -94,18 +100,16 @@ h1 {
 }
 
 .gif-container img {
-    width: 100%;
-    max-width: 300px;
+    max-width: 100%;
     border-radius: 10px;
 }
 
-.gif-caption {
-    font-family: 'BIFASER', sans-serif; /* Убедитесь, что шрифт BIFASER подключен правильно */
-    font-size: 1.2em;
-    margin-top: 10px;
+.signature {
+    font-family: 'Wake Snake', serif;
+    font-size: 1.5em;
     color: #f4f4f4;
+    margin-top: 10px;
 }
-
 
 .result-box {
     margin-top: 10px;
