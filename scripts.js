@@ -27,22 +27,27 @@ function changeBackgroundColor() {
 let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 let rainbowIndex = 0;
 let autoCycleInterval;
+let isCycling = false;
 
 function cycleRainbow() {
+    if (isCycling) return; // Если уже в цикле, выходим из функции
+    isCycling = true;
     let rainbowDivs = document.querySelectorAll('.rainbow div');
     for (let i = 0; i < rainbowDivs.length; i++) {
         rainbowDivs[i].className = colors[(i + rainbowIndex) % colors.length];
     }
     rainbowIndex = (rainbowIndex + 1) % colors.length;
+    isCycling = false; // Устанавливаем флаг обратно после завершения цикла
 }
 
 function startAutoCycle() {
-    stopAutoCycle(); // Останавливаем любой предыдущий цикл перед запуском нового
+    stopAllCycles(); // Останавливаем любой предыдущий цикл перед запуском нового
     autoCycleInterval = setInterval(cycleRainbow, 300);
 }
 
-function stopAutoCycle() {
+function stopAllCycles() {
     clearInterval(autoCycleInterval);
+    isCycling = false; // Останавливаем циклическое движение
 }
 
 // Функции для калькулятора
