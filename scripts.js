@@ -26,6 +26,7 @@ function changeBackgroundColor() {
 // Функции для работы с радугой
 let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 let rainbowIndex = 0;
+let autoCycleInterval;
 
 function cycleRainbow() {
     let rainbowDivs = document.querySelectorAll('.rainbow div');
@@ -35,8 +36,13 @@ function cycleRainbow() {
     rainbowIndex = (rainbowIndex + 1) % colors.length;
 }
 
-function autoCycleRainbow() {
-    setInterval(cycleRainbow, 300);
+function startAutoCycle() {
+    stopAutoCycle(); // Останавливаем любой предыдущий цикл перед запуском нового
+    autoCycleInterval = setInterval(cycleRainbow, 300);
+}
+
+function stopAutoCycle() {
+    clearInterval(autoCycleInterval);
 }
 
 // Функции для калькулятора
