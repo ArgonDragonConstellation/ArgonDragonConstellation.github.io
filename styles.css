@@ -1,8 +1,4 @@
-{
-    font-family: 'Wake Snake';
-    src: url('Wake Snake Free Trial.otf') format('otf'),
-         
-}
+
 
 body {
     font-family: Tahoma, serif;
@@ -105,6 +101,8 @@ h1 {
 }
 
 .signature {
+    font-family: 'Wake Snake';
+    src: url('Wake Snake Free Trial.otf') format('otf'),
     font-family: 'Wake Snake', serif;
     font-size: 1.5em;
     color: #f4f4f4;
