@@ -1,7 +1,7 @@
 // Функции для работы с возрастом
 function askAge() {
     let age = prompt('Введите ваш возраст:');
-    while (age === null || isNaN(age) || age <= 0) {
+    while (age === null  isNaN(age)  age <= 0) {
         age = prompt('Возраст введен неверно. Введите ваш возраст:');
     }
     if (confirm('Ваш возраст ' + age + '?')) {
@@ -55,7 +55,7 @@ function calculate(operation) {
     let num1 = parseFloat(document.getElementById('num1').value);
     let num2 = parseFloat(document.getElementById('num2').value);
     let result;
-    
+
     if (isNaN(num1) || isNaN(num2)) {
         result = 'Некорректные данные';
     } else {
@@ -75,7 +75,7 @@ function calculate(operation) {
         }
         if (result > 15) {
             document.getElementById('calc-result').style.backgroundColor = 'red';
-            result = 'число>15';
+            result = 'число > 15';
         } else {
             document.getElementById('calc-result').style.backgroundColor = 'white';
         }
