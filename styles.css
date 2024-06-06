@@ -85,3 +85,37 @@ h1 {
     font-size: 1.2em;
     color: #f4f4f4;
 }
+
+/* Additional styles for task1.html */
+.container {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #444; /* Темный фон для контейнера */
+}
+.input-section input {
+    margin: 5px;
+    padding: 5px;
+}
+.button-section button {
+    margin: 5px;
+    padding: 10px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button-section button:hover {
+    background-color: #666;
+}
+.result-section .result {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #555; /* Темный фон для результата */
+}
+.result-section .result span {
+    font-weight: bold;
+}
+
