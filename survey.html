@@ -39,10 +39,15 @@
                 <input type="file" id="avatar">
             </div>
             <button type="button" id="submitForm" onclick="submitSurvey()">Меня возьмут</button>
-            <button type="button" onclick="editSurvey()">Редактировать анкету</button>
         </form>
-        <p id="result"></p>
-        <button class="nav-button" onclick="location.href='index.html'">На главную</button>
+        <div id="result"></div>
+    </div>
+
+    <div class="container" id="confirmationContainer" style="display: none;">
+        <h2>Подтверждение анкеты</h2>
+        <div id="formDataDisplay"></div>
+        <button onclick="editSurvey()">Нет, данные не верны</button>
+        <button onclick="confirmSurvey()">Да, все данные верны</button>
     </div>
 </body>
 </html>
