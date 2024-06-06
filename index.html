@@ -3,12 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  
-
     <div class="profile">
         <h2>Резюме</h2>
         <img src="133849184.jpg" alt="Фото">
@@ -27,6 +24,12 @@
         <div class="result" id="result"></div>
     </div>
 
+    <!-- Added Image and Caption -->
+    <div class="image-caption">
+        <img src="images/photo_5406903474345598625_y.jpg" alt="Per aspera ad astra">
+        <p>Per aspera ad astra</p>
+    </div>
+
     <div class="rainbow">
         <div class="red"></div>
         <div class="orange"></div>
@@ -40,12 +43,9 @@
     <button onclick="startAutoCycle()">Автоцикл</button>
     <button onclick="stopAllCycles()">Остановить движение радуги</button>
 
+    <button class="nav-button" onclick="location.href='task1.html'">Индивидуальное задание 1</button>
+    <button class="nav-button" onclick="location.href='survey.html'">Анкета</button>
 
-     <button class="nav-button" onclick="location.href='task1.html'">Индивидуальное задание 1</button>
-        <button class="nav-button" onclick="location.href='survey.html'">Анкета</button>
-    </div>
-
-    
     <div class="calculator">
         <h2>Калькулятор</h2>
         <input type="text" id="num1" placeholder="Число 1">
@@ -60,3 +60,4 @@
     <script src="scripts.js"></script>
 </body>
 </html>
+
