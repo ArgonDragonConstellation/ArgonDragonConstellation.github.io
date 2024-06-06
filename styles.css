@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Wake Snake Free Trial';
+    src: url('fonts/Wake Snake Free Trial.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     font-family: Tahoma, serif;
     margin: 20px;
@@ -84,6 +91,7 @@ h1 {
     margin-top: 10px;
     font-size: 1.2em;
     color: #f4f4f4;
+    font-family: 'Wake Snake Free Trial', sans-serif;
 }
 
 /* Additional styles for task1.html */
@@ -118,4 +126,5 @@ h1 {
 .result-section .result span {
     font-weight: bold;
 }
+
 
